@@ -1,0 +1,27 @@
+# permissions for end users to edit o2ims.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: o2-ims-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: o2ims-editor-role
+rules:
+- apiGroups:
+  - ovran.example.com
+  resources:
+  - o2ims
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - ovran.example.com
+  resources:
+  - o2ims/status
+  verbs:
+  - get

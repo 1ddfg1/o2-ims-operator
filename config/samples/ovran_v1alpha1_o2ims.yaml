@@ -1,0 +1,9 @@
+apiVersion: ovran.example.com/v1alpha1
+kind: O2ims
+metadata:
+  labels:
+    app.kubernetes.io/name: o2-ims-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: o2ims-sample
+spec:
+  url: "http://10.148.85.47:9000/o2ims-infrastructureInventory/api_versions"

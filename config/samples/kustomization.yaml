@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- ovran_v1alpha1_o2ims.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples
